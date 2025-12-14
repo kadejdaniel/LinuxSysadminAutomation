@@ -1,39 +1,51 @@
-# 📋 Cel Projektu  
-Praktyczna implementacja umiejętności administracji serwerem Linux (bez GUI) poprzez automatyzację skryptów i konfigurację systemu.  
-Skupiam się na kluczowych zadaniach sysadmina z naciskiem na **bezpieczeństwo**, **automatyzację** i **zdalne zarządzanie**.  
+# Linux Server Administration & Automation
+
+**Projekt praktyczny skupiający się na implementacji kluczowych zadań administracji systemami Linux (bez GUI), z naciskiem na bezpieczeństwo, automatyzację i zdalne zarządzanie.**
 
 ---
 
-## 🎯 Kluczowe Osiągnięcia  
+## Cele Projektu
 
-### 🔐 Konfiguracja Dostępu Zdalnego  
-- Połączenie SSH (OpenSUSE → Linux VM) – ustanowiono bezpieczne połączenie  
-- Połączenie SSH (Windows 11 → Linux VM) – pełny dostęp z Windowsa  
-- Konfiguracja sieci – ustawienie karty mostkowanej w VirtualBox dla widoczności w LAN  
-- Hardening bezpieczeństwa – konfiguracja firewalla i zabezpieczenie dostępu SSH  
+Celem projektu była praktyczna implementacja umiejętności w zakresie administracji serwerem Linux poprzez konfigurację środowiska wirtualnego, zabezpieczenie dostępu oraz automatyzację rutynowych zadań operacyjnych za pomocą skryptów Bash.
 
 ---
 
-### ⚡ Automatyzacja przez Skrypty  
-- Skrypt backupujący – automatyczne tworzenie kopii zapasowych wskazanych folderów  
-- Skrypt zarządzania użytkownikami – automatyzacja tworzenia użytkowników z katalogami domowymi i przypisywaniem grup  
-- Skrypt aktualizacji Git – automatyzacja commitów i pushowania zmian do repozytorium  
-- Skrypt automatycznej aktualizacji systemu – instalacja nowych pakietów i usuwanie niepotrzebnych  
-- Skrypt pokazujący stan serwera – podgląd podstawowych informacji o działaniu systemu  
+##  Kluczowe Osiągnięcia i Kompetencje
+
+### I. Konfiguracja i Hardening Systemu
+
+Demonstracja umiejętności w zakresie konfiguracji sieciowej i zabezpieczania podstawowych usług dostępu zdalnego.
+
+* **Zdalny Dostęp (SSH):** Ustanowienie i weryfikacja stabilnych połączeń SSH z różnych platform klienckich (OpenSUSE, Windows 11) do wirtualnej maszyny (VM).
+* **Konfiguracja Sieci:** Skonfigurowanie karty sieciowej w VirtualBox w trybie mostkowanym (Bridged Adapter) w celu zapewnienia pełnej widoczności serwera w sieci LAN.
+* **Wzmocnienie Bezpieczeństwa (Hardening):** Podstawowa konfiguracja firewalla oraz zabezpieczenie dostępu SSH (np. zmiana portu, wyłączenie logowania jako root).
+
+### II. Automatyzacja Procesów (Bash Scripting)
+
+Rozwój i implementacja skryptów automatyzujących rutynowe i powtarzalne zadania administracyjne.
+
+* **Skrypt Backupujący:** Automatyczne tworzenie i zarządzanie kopiami zapasowymi wskazanych katalogów.
+* **Zarządzanie Użytkownikami:** Skrypt do automatyzacji procesu tworzenia nowych kont użytkowników, włączając tworzenie katalogów domowych i przypisywanie do określonych grup systemowych.
+* **Kontrola Wersji (Git):** Skrypt do automatycznego zatwierdzania (commit) i wysyłania (push) lokalnych zmian do zdalnego repozytorium na GitHubie.
+* **Aktualizacje Systemu:** Skrypt do automatycznego wykonywania pełnego cyklu aktualizacji systemu (instalacja pakietów, usuwanie niepotrzebnych zależności).
+* **Diagnostyka Serwera:** Skrypt wyświetlający podstawowe metryki i stan działania systemu (CPU, RAM, użycie dysku).
+
+### III. Środowisko Technologiczne
+
+| Narzędzie | Rola w Projekcie |
+| :--- | :--- |
+| **VirtualBox** | Środowisko wirtualizacyjne do izolacji i testowania konfiguracji serwera (Linux VM bez GUI). |
+| **OpenSSH** | Protokół i narzędzia do bezpiecznego zdalnego zarządzania serwerem. |
+| **Bash Scripting** | Język wykorzystany do automatyzacji zadań operacyjnych i administracyjnych. |
+| **Git / GitHub** | Kontrola wersji, dokumentacja kodu i konfiguracji. |
 
 ---
 
-### 🛠️ Narzędzia i Technologie  
-- VirtualBox – wirtualizacja środowiska serwerowego  
-- OpenSSH – zdalny dostęp i zarządzanie  
-- Bash Scripting – automatyzacja zadań administracyjnych  
-- Git / GitHub – kontrola wersji i dokumentacja projektu  
+##  Plan Rozwoju (Future Scope)
 
----
+Projekt jest w fazie ciągłego rozwoju, planowane kolejne kroki obejmują:
 
-## 🔜 Kolejne Kroki  
-- Implementacja monitorowania wolnego miejsca na dysku z alertami  
-- Konfiguracja monitorowania procesów systemowych  
-- Rozwój skryptów zabezpieczających system  
+* Implementacja narzędzi do monitorowania **wolnego miejsca na dysku** z systemem generowania alertów.
+* Konfiguracja monitorowania kluczowych **procesów systemowych** i zużycia zasobów.
 
 ---
